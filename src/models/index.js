@@ -12,3 +12,5 @@ Actor.belongsToMany(Movie, {through: 'MoviesActors'});
 
 Movie.belongsToMany(Director, {through: 'MoviesDirectors'});
 Director.belongsToMany(Movie, {through: 'MoviesDirectors'});
+
+
