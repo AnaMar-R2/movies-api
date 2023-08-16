@@ -1,4 +1,3 @@
-const { BelongsToMany } = require("sequelize");
 const Movie = require("./Movie");
 const Genre = require("./Genre");
 const Actor = require("./Actor");
@@ -12,5 +11,3 @@ Actor.belongsToMany(Movie, {through: 'MoviesActors'});
 
 Movie.belongsToMany(Director, {through: 'MoviesDirectors'});
 Director.belongsToMany(Movie, {through: 'MoviesDirectors'});
-
-
